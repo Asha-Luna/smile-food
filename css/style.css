@@ -27,21 +27,14 @@ a, a:link {
     width: 1200px;
     margin: 0 auto;
     padding: 20px 0;
-}
-.header-top::after { /* clearFix : hack < standard */
-    content: '';
-    display: block;
-    clear: both;
-}
-.header-logo {
-    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .header-links {
-    float: right;
-    margin: 15px 0 0 0;
+    display: flex;
 }
 .header-links li {
-    float: left;
     margin: 0 0 0 15px;
 }
 
@@ -124,6 +117,7 @@ a, a:link {
 }
 .prd-list { /* ul <--> .prd-list */
     display: flex; /* flex-container : 부모 */
+    flex-direction: row;
     justify-content: center;
     column-gap: 30px;
 }
