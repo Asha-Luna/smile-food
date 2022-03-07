@@ -79,9 +79,11 @@ a, a:link {
     position: absolute;
     left: 10%;
     top: 30%;
+    text-shadow: 2px 2px 5px #333; 
+    /* 텍스트-그림자효과 : x y radius color */
 }
 .slogan-text p:nth-child(1){
-    font-size: 2rem;
+    font-size:2rem;
     margin: 0 0 1rem 0;
 }
 .slogan-text p:nth-child(2){
@@ -111,7 +113,26 @@ a, a:link {
     display: inline-block;
 }
 
-/* ============== 푸터영역 =============== */
+/* ============== 본문영역 =============== */
+#main h4 { /* id가 main인 요소의 후손중 h4를 스타일 선택 */
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px 0;
+    color: #d60c00;
+    font-size: 1.375rem; /* 16px 기준 22px은 상대적인 크기단위(%,rem) 사용 */
+    font-weight: 900; /* 단위(unit)이 없음 값, z-index도 마찬가지 */
+}
+.prd-list { /* ul <--> .prd-list */
+    display: flex; /* flex-container : 부모 */
+    justify-content: center;
+    column-gap: 30px;
+}
+.prd-list li {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%; /* 원형, 1:1 비율이 아니면, 타원 */
+    overflow: hidden;
+}
 
 
 /* ============== 반응형 스타일 =============== */
